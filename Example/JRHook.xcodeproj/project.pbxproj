@@ -37,11 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		181EC1E8268AE9BE97447885 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		181EC1E8268AE9BE97447885 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1B643ABA3D83FBD8DBC6F281 /* Pods-JRHook_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRHook_Example.debug.xcconfig"; path = "Target Support Files/Pods-JRHook_Example/Pods-JRHook_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1EE8EE9A3E9E78467405DE0C /* Pods-JRHook_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRHook_Example.release.xcconfig"; path = "Target Support Files/Pods-JRHook_Example/Pods-JRHook_Example.release.xcconfig"; sourceTree = "<group>"; };
 		23946A22CE978DA07EDC3231 /* Pods-JRHook_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRHook_Tests.release.xcconfig"; path = "Target Support Files/Pods-JRHook_Tests/Pods-JRHook_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3F9D22088794698E733F6D49 /* JRHook.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JRHook.podspec; path = ../JRHook.podspec; sourceTree = "<group>"; };
+		3F9D22088794698E733F6D49 /* JRHook.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JRHook.podspec; path = ../JRHook.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* JRHook_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRHook_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		71E9742A78FA3BBF9EE6B9FB /* Pods_JRHook_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JRHook_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		731100E237BCA7CB4A9ECCCF /* Pods-JRHook_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRHook_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JRHook_Tests/Pods-JRHook_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A031D59DF21F1A619A6871EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A031D59DF21F1A619A6871EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C37FFC7A7F2B58A1943AFD11 /* Pods_JRHook_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JRHook_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				731100E237BCA7CB4A9ECCCF /* Pods-JRHook_Tests.debug.xcconfig */,
 				23946A22CE978DA07EDC3231 /* Pods-JRHook_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "jaySun-ch";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = TR8685W29A;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,6 +497,7 @@
 			baseConfigurationReference = 1B643ABA3D83FBD8DBC6F281 /* Pods-JRHook_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TR8685W29A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JRHook/JRHook-Prefix.pch";
 				INFOPLIST_FILE = "JRHook/JRHook-Info.plist";
@@ -510,6 +514,7 @@
 			baseConfigurationReference = 1EE8EE9A3E9E78467405DE0C /* Pods-JRHook_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TR8685W29A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JRHook/JRHook-Prefix.pch";
 				INFOPLIST_FILE = "JRHook/JRHook-Info.plist";
